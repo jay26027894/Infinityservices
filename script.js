@@ -20,7 +20,7 @@ ScrollReveal().reveal('.counters-section', {
   duration: 1000,
   origin: 'right',
   distance: '50px',
-  delay: 400,
+  delay: 200,
   reset: true // Reset the animation each time the element enters the viewport
 });
 
@@ -28,7 +28,7 @@ ScrollReveal().reveal('.services', {
   duration: 1500,
   origin: 'bottom',
   distance: '50px',
-  delay: 400,
+  delay: 200,
   reset: true // Reset the animation each time the element enters the viewport
 });
 
@@ -36,7 +36,7 @@ ScrollReveal().reveal('.contact', {
   duration: 1000,
   origin: 'top',
   distance: '50px',
-  delay: 400,
+  delay: 200,
   reset: true 
   // Reset the animation each time the element enters the viewport
 });
@@ -44,7 +44,7 @@ ScrollReveal().reveal('.map', {
   duration: 1500,
   origin: 'bottom',
   distance: '50px',
-  delay: 400,
+  delay: 200,
   reset: true // Reset the animation each time the element enters the viewport
 });
 
