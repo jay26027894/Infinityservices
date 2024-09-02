@@ -1,0 +1,510 @@
+
+header {
+    width: 100%;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+   background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    animation: fadeIn 2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease; /* Smooth underline transition */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  .left img {
+    height: 50px;
+    margin-right: 10px;
+   
+  }
+  
+  .right ul li a {
+    text-decoration: none;
+    color: #000000; /* Black text color for links in .right */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .right ul li a:hover {
+    color: #000000; /* Color on hover (remains black) */
+    text-decoration: underline;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    animation: fadeIn 2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif; /* or any font of your choice */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }  
+  
+  .left img {
+    height: 50px;
+    margin-right: 10px;
+    
+  }
+  
+  .right ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+  }
+  
+  .right ul li a:hover {
+    color: #9c9a9d;
+    text-decoration: underline;
+  }
+  
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2); /* Transparent overlay */
+}
+#canvas-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hero-overlay img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+   /* Fade-in effect for the image */
+}
+
+.hero-content {
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  /* Slide-in effect for the text content */
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #EEEEEE;
+}
+
+.welcome-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.welcome-text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(92, 91, 91);
+    line-height: 1.6;
+}
+
+.welcome-text .signature {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.welcome-image {
+    flex: 1;
+    text-align: center;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+}
+.counters-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #D8D9DA; 
+  }
+  
+  .counter-container {
+    display: flex;
+    gap: 30px; /* Space between counter items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center align counters */
+  }
+  
+  .counter-item {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .counter {
+    font-size: 3rem; 
+    font-weight: bold;
+  }
+  
+  .counter-item p {
+    margin: 10px 0 0;
+    font-size: 1.2rem; 
+    color: #555;
+  }
+ /* Services Section */
+
+.services {
+  background-color: #ffffff; /* White background */
+  color: rgb(116, 110, 110);
+  padding: 50px 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.services-header h2 {
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 1.1em;
+  max-width: 600px;
+}
+
+/* Slider Container Styles */
+.services-slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden; /* Hide overflowing items */
+  margin: 20px auto;
+}
+
+/* Slider Styles */
+.services-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding */
+  width: 300%; /* Adjust based on the number of items */
+}
+
+/* Service Item Styles */
+.service-item {
+  min-width: 100%; /* Each item takes full width of the container */
+  background-color: rgba(0, 0, 0, 0.05); /* Light grey background */
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  position: relative; /* Required for the hover effect */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.service-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease; /* Smooth transition for image zoom */
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(92, 91, 91);
+}
+
+.service-item a {
+  color: #6a6666;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.service-item a:hover {
+  text-decoration: underline;
+  color: #797f86; /* Change link color on hover */
+}
+
+/* Hover Effects */
+.service-item:hover {
+  background-color: #000000; /* Change background color on hover */
+  color: #ffffff; /* Change text color to white */
+  transform: translateY(-10px); /* Subtle lifting effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
+
+.service-item:hover img {
+  transform: scale(1.05); /* Slight zoom effect on image */
+}
+
+/* Navigation Button Styles */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact {
+  position: relative; /* Ensures the overlay and content are positioned relative to this section */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content */
+  padding: 40px;
+  background-color: #ffffff;
+  overflow: hidden; /* Ensures that the content doesn’t overflow outside the section */
+}
+
+.contact-overlay {
+  position: absolute; /* Positions the overlay relative to the .contact section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for overlay */
+  z-index: 1;
+}
+
+.contact-content {
+  position: relative; 
+  z-index: 2; 
+  color: white; 
+  text-align: center; 
+  max-width: 500px;
+  padding: 20px;
+}
+
+.contact-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.contact-content button{
+  background-color: #1f1e1e;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+.contact-content button:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+}
+
+.contact-content button a{
+  text-decoration: none;
+  color: #f8f9fa;
+}
+.map{
+  padding: auto;
+  margin: auto;
+  
+}
+.map h1{
+  text-align: center;
+  font-size: 1.9rem;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 0 12px;
+  padding: 4px 8px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+
+footer a:hover {
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
